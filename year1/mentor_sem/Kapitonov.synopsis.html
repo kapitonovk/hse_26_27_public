@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Synopsis.2026-11-24</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans);
+      @import url(https://fonts.googleapis.com/css?family=IBM+Plex+Serif);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { 
+            font-family: 'IBM Plex Sans';
+             }
+      h1, h2, h3 {
+        font-family: 'IBM Plex Sans';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-slide-content h1 {
+        font-size: 1.6em;
+        margin-bottom:0.5em;
+       }
+      .remark-slide-content h2 {
+        font-size: 1.4em;
+        margin-bottom:0.5em;
+       }
+      .remark-slide-content h3 {
+        font-size: 1.2em;
+        margin-bottom:0.5em;
+       }
+      .remark-slide-content.title-slide h1 {
+        font-size: 2em;
+        margin-bottom:3.5em;
+       }
+      .remark-slide-content.small-text {
+        font-size:10px;
+       }
+    .remark-slide-content.dense {
+      line-height: 1.2;
+      /* padding: 20px 45px; */
+    }
+    .remark-slide-content.dense  p {
+      margin: 0.5em 0;
+      font-size: 17px;
+    }
+
+    .remark-slide-content.dense  ol {
+      margin: 0.5em 0;
+      font-size: 17px;
+      padding-left: 1.4em;
+    }
+
+    .remark-slide-content.dense li {
+      margin-bottom: 0.35em;
+      font-size: 17px;
+    }
+
+    .remark-slide-content {
+      font-size: 21px;
+      line-height: 1.3;
+    }
+
+    .left-column {
+      float: left;
+      font-size: 16px;
+      width: 49%;
+    }
+
+    .right-column {
+      float: right;
+      width: 47%;
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    .source {
+      font-size: 13px;
+      color: #777;
+    }
+
+    .future {
+      margin-top: 1em;
+      color: #666;
+      font-size: 18px;
+    }
+
+    .remark-slide-content.title-slide h1 {
+      font-size: 1.8em;
+      margin-bottom: 0.6em;
+    }
+
+    .remark-slide-content.title-slide h3 {
+      font-size: 1.15em;
+      color: #555;
+      margin-bottom: 1.8em;
+    }
+
+    @page {
+      size: 1210px 681px;
+      margin: 0;
+    }
+
+    @media print {
+      .remark-slide-scaler {
+        width: 100% !important;
+        height: 100% !important;
+        transform: scale(1) !important;
+        top: 0 !important;
+        left: 0 !important;
+      }
+    }
+
+    .remark-slide-content.bibliography {
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    .remark-slide-content.bibliography li {
+      margin-bottom: 0.7em;
+    }
+
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+class: left, middle, title-slide
+
+# Пространственная дифференциация гидрологических свойств городской территории
+
+## Оценка в контексте поверхностного стока
+
+Синопсис курсовой работы
+
+<br>
+
+Капитонов Кирилл, МПДПГ-261
+
+Научный руководитель: Матасов Виктор Михайлович,
+к.г.н., доцент ФГГТ
+
+---
+class: dense
+
+# От инфраструктуры — к пониманию территории
+
+.left-column[
+Городская территория рассматривается через её участие
+в формировании, удержании и перераспределении
+дождевого и снеготалого поверхностного стока.
+
+Для планирования важно понимать:
+
+- как различаются гидрологические свойства территорий;
+- как эти различия связаны с городской морфологией;
+- как они проявляются на разных масштабах.
+
+**Проблема**: насколько разные методы учитывают
+пространственную структуру города и дают сопоставимые
+представления о гидрологических различиях территорий?
+
+
+]
+
+.right-column[
+<img src="img/lee_et_al_1.png" style="width:80%;">
+
+.source[По Lee et al., 2018, рис. 5]
+]
+
+<br>
+.future[
+**Пространственные различия** → Типы территорий → Подходы к управлению
+]
+
+---
+
+# Цель и задачи
+
+**Цель**
+
+Выявить пространственные различия гидрологических свойств
+городских территорий и их связь с морфологией городской среды
+на основе сопоставления подходов к оценке
+таких свойств в контексте поверхностного стока
+
+**Основные задачи**
+
+1. Рассмотреть теоретические подходы и систематизировать
+методы оценки
+2. Сопоставить способы учета городской морфологии, пространственных связей и масштаба
+3. Провести ГИС-оценку выбранной территории с использованием отобранных подходов
+4. Интерпретировать пространственные различия и определить возможности и ограничения методов для характеристики дифференциации свойств территории
+
+---
+class: dense
+
+# Исследовательский вопрос и гипотезы
+
+Как гидрологические различия территорий связаны с морфологией городской среды и насколько сохраняются при изменении метода и масштаба оценки?
+
+**Гипотезы**
+
+1. При близком составе покрытий территории различаются по гидрологическим свойствам вследствие различий в конфигурации и связности компонентов
+
+2. Учет конфигурации и связности меняет оценки по сравнению с подходами, основанными преимущественно на площадных соотношениях покрытий
+
+3. Объясняющее значение морфологических характеристик меняется с масштабом анализа
+
+<img src="img/yin_et_al_1.png" style="width:90%;">
+
+.source[По Yin et al., 2025, рис. 2]
+---
+
+# Исследовательский подход
+
+<!-- ### Теоретическая рамка
+
+Городская гидрология · Городская морфология · Экосистемные услуги
+-->
+
+**Логика исследования**
+
+Обзор литературы → Сопоставление подходов →
+ГИС-апробация → Интерпретация пространственных различий
+
+**Предполагаемые данные**
+
+- Слои проницаемости покрытий, застройки, озеленения, водоемов
+- Рельеф и пространственные связи
+- Сведения об осадках, снеготаянии и водоотведении
+
+.future[
+Конкретный кейс и набор методов будут определены по итогам обзора и оценки обеспеченности данными.
+]
+
+---
+
+# Ожидаемые результаты
+
+**Систематизация подходов**
+
+Сопоставление по учитываемым процессам, показателям, масштабам, единицам анализа и данным
+
+**Пространственные оценки**
+
+Сравнительные характеристики гидрологических свойств выбранной городской территории
+
+**Интерпретация**
+
+Выводы о связи оценок с морфологией городской среды и об их зависимости от метода и масштаба анализа
+
+.future[
+Перспектива продолжения:
+типы территорий и дифференцированные подходы к управлению стоком.
+]
+
+
+---
+class: bibliography
+
+# Источники
+
+1. Сиваев С. Б., Абдуллаев А. М., Смирнов О. О.,
+Андреева Е. С., Залян Э. С., Летуновский А. В. (2023).
+Ливневая канализация в современном городе.
+От тарификации до инфильтрации.
+М.: Издательский дом ВШЭ. 120 с.
+
+2. Congressional Research Service. (2015, September 15).
+Green Infrastructure and Issues in Managing Urban Stormwater.
+Report R43131.
+
+3. Djamaluddin, J., Zubair, H., Dariati, T., Demmalino, E. B.,
+Iswoyo, H., & Arif, S. (2025).
+Urban Landscape and Surface Runoff Management: A Review.
+Engineering, Technology & Applied Science Research,
+15(6), 30501–30507.
+
+4. Kuller, M., Bach, P. M., Roberts, S., Browne, D.,
+& Deletic, A. (2019).
+A planning-support tool for spatial suitability assessment
+of green urban stormwater infrastructure.
+Science of the Total Environment, 686, 856–868.
+
+5. La Rosa, D., & Pappalardo, V. (2020).
+Planning for spatial equity — A performance based approach
+for sustainable urban drainage systems.
+Sustainable Cities and Society, 53, 101885.
+
+6. Lee, J. G., Nietch, C. T., & Panguluri, S. (2018).
+Drainage area characterization for evaluating green infrastructure
+using the Storm Water Management Model.
+Hydrology and Earth System Sciences, 22, 2615–2635.
+
+7. Lim, T. C., & Welty, C. (2017).
+Effects of spatial configuration of imperviousness and green
+infrastructure networks on hydrologic response
+in a residential sewershed.
+Water Resources Research, 53(9), 8084–8104.
+
+8. Liu, Z., Han, Z., Shi, X., Liao, X., Leng, L., & Jia, H. (2023).
+Multi-objective optimization methodology for green-gray
+coupled runoff control infrastructure adapting spatial
+heterogeneity of natural endowment and urban development.
+Water Research, 233, 119759.
+
+9. Smets, V., Verbeiren, B., Hermy, M., & Somers, B. (2019).
+Urban Spatial Configuration and Functional Runoff Connectivity:
+Influence of Drainage Grid Density and Landscape Metrics.
+Water, 11(12), 2661.
+
+10. Yin, Z., Liu, G., Zheng, Z., & Li, X. (2025).
+Sustainable Stormwater Management: Runoff Impact of Urban
+Land Layout with Multi-Level Impervious Surface Coverage.
+Sustainability, 17(8), 3511.
+
+11. Zhu, Y., Burlando, P., Zhang, Y., Chi, D., Wang, J.,
+Qiu, Y., Bonatesta, M., Zou, W., Geiß, C., Tan, P. Y.,
+& Fatichi, S. (2025).
+The influence of urban morphological changes on pluvial
+flooding during urban expansion.
+Sustainable Cities and Society, 135, 107018.
+
+</textarea>
+
+    <script src="./remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create({
+        ratio: '297:210'
+        });
+    </script>
+
+  </body>
+</html>
